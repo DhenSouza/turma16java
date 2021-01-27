@@ -20,6 +20,8 @@ public class EntradaDados {
 		soma = a+b;
 		
 		System.out.println(soma);
+		
+		ler.close();
 	}
 
 }

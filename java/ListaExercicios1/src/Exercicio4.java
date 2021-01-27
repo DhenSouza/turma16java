@@ -23,6 +23,8 @@ public class Exercicio4 {
 		D = ((R+S)/2);
 		
 		System.out.println("\n O VALOR DE R: " + R + "\n O valor de S: " + S + "\n O Valor de D: " + D);
+		
+		ler.close();
 	}
 
 }

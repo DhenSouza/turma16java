@@ -17,6 +17,8 @@ public class Exercicio2 {
 		System.out.println("\n Total em anos: "+ anos);
 		System.out.println("\n Total em meses: " + meses);
 		System.out.println("\n Total em dias: " + dias);
+		
+		ler.close();
 	}
 
 }

@@ -18,6 +18,8 @@ public class Exercicio3 {
 		System.out.println(horas+" Horas\n");
 		System.out.println(minutos+" Minutos\n");
 		System.out.println(segundos+" Segundos \n");
+		
+		ler.close();
 	}
 
 }

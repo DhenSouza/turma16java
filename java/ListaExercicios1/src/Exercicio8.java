@@ -20,6 +20,8 @@ public class Exercicio8 {
 		custoConsumidor = custoFabrica + valorDistribuidor + valorImposto;
 		
 		System.out.println("O valor final ao consumidor é de: " + custoConsumidor);
+		
+		ler.close();
 	}
 
 }

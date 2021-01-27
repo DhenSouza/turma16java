@@ -20,6 +20,8 @@ public class Exercicio5 {
 		media = ((n1 * 2)+ (n2 * 3) + (n3 * 5) /3);
 		
 		System.out.println("\n A media do aluno é de: " + media);
+		
+		ler.close();
 	}
 
 }

@@ -30,6 +30,8 @@ public class Exercicio7 {
 		y = ((a*f) - (c*d) / (a*e) - (b*d));
 		
 		System.out.println("\n O valor de X: " + x + "\n O valor de Y: " + y);
+		
+		ler.close();
 	}
 
 }

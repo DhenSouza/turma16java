@@ -6,7 +6,7 @@ public class Exercicio6 {
 		
 		Scanner ler = new Scanner(System.in);
 		
-		double x1,x2,y1,y2,d;
+		double x1,x2,y1,y2;
 		double soma1,soma2,potencia1,potencia2,resultado,raiz;
 		
 		System.out.println("Informe um valor para o X1: ");
@@ -29,7 +29,9 @@ public class Exercicio6 {
 		
 		raiz = Math.sqrt(resultado);
 		
-		System.out.println("O resultado é: " + raiz);
+		System.out.printf("O resultado é: %.2f " , raiz);
+		
+		ler.close();
 	}
 
 }

@@ -20,5 +20,7 @@ public class Exercicio1 {
 		total = ((idade * diasDoAno) + (meses * diasDoMes) + dias);
 				
 				System.out.printf("Os dias totais são: %.2f" , total);
+				
+		ler.close();
 	}
 }
