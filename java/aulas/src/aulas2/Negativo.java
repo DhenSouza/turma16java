@@ -18,6 +18,7 @@ public class Negativo {
 		{
 			System.out.println("Numero Negativo!");
 		}
+		
 		else if(numero %3 == 0)
 		{
 			System.out.println("este numero é IMPAR !");
