@@ -13,7 +13,6 @@ public class Exercicio1 {
 		final double habitantes = 20;
 		double salario, filhos, totalFilhos = 0.0, totalSalario = 0.0, mediaSalario = 0.0, mediaFilhos = 0.0, maiorSalario = 0.0,cont = 0.0;
 		double percSalario = 0.0;
-		
 	
 		for(int i=0; i<habitantes; i++)
 		{
