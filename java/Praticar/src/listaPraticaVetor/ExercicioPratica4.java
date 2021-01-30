@@ -1,13 +1,13 @@
 package listaPraticaVetor;
 
-import java.util.Random;
+//import java.util.Random;
 import java.util.Scanner;
 
 public class ExercicioPratica4 {
 
 	public static void main(String[] args) {
 		Scanner leia = new Scanner(System.in);
-		Random random = new Random();
+		//Random random = new Random();
 		
 		final double TAMANHO = 5;
 		double [] numeros = new double[10];
