@@ -8,24 +8,21 @@ public class Emenu {
 		Scanner leia = new Scanner(System.in);
 		int opcao;
 		
-		System.out.println("Resultado: " + soma(10, 20));
-		
 		do
 		{
-			
-		
 			System.out.println("\t ||MENU|| \t");
-			System.out.println("\n1 - Cadastro ");
+			System.out.println("\n1 - Produtos ");
 			System.out.println("2 - ");
 			System.out.println("3 - ");
 			System.out.println("4 - ");
 			System.out.println("5 - ");
 			System.out.printf("Selecione a opção que deseja: ");
 			opcao = leia.nextInt();
+			
 			switch (opcao) 
 			{
 			case 1:
-				cadastro();
+				produtos();
 				break;
 			case 2:
 				
@@ -45,10 +42,22 @@ public class Emenu {
 	
 	}
 	
-	public static void cadastro() {
+	public static void produtos() {
 		Scanner leia = new Scanner(System.in);
+		String produto [] = {"LivroA","LivroB","LivroC","LivroD","LivroE", "LivroF", "LivroG", "LivroH", "LivroI", "LivroJ"};
 		String nome;
 		char sexo;
+		int [] posicaoProduto = new int [10];
+		String codProduto [] = {"101","102","103","104","105", "106", "107", "108", "109", "110"};
+		double [] valorProduto = new double [10];
+		int [] estoqueTotal = new int [10];
+		
+		//public static void mostraProdutos(int posicaoProduto[], String codProduto[], String descricaoProduto[], int estoqueTotal[], double valorProduto[]) {
+
+	        System.out.println("# \t CODIGO \t PRODUTO \t PREÇO \t\t QUANTIDADE");
+	        for(int i=0; i<10; i++) {
+	            System.out.printf("\n %d \t %s \t\t %s \t R$ %.2f \t Qtd:  %d",posicaoProduto[i], codProduto[i], valorProduto[i], estoqueTotal[i]);
+	       // }
 		System.out.println("Informe Primeiro Nome: ");
 		nome = leia.next();
 		
@@ -74,11 +83,9 @@ public class Emenu {
 			System.out.printf("Olá SrE %s: ", nome);
 			
 		}
-		
-		leia.close();
 	}
 	
-	public static void adicionarCarrinho()
+	/*public static void adicionarCarrinho()
 	{
 		final int add = 10;
 		int [] addProduto = new int [add];
@@ -91,13 +98,7 @@ public class Emenu {
 	
 	public static void carrinho() {
 		int produto = 10;
-	}
-	
-	static int soma(int x, int y)
-	{
-		int soma  = x + y;
-		return soma;
-	}
+	}*/
  }
 
 
