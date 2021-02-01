@@ -28,7 +28,7 @@ public class Emenu {
 				
 				break;
 			case 3:
-				adicionarCarrinho();
+				//adicionarCarrinho();
 				break;
 			case 4:
 				
@@ -52,12 +52,12 @@ public class Emenu {
 		double [] valorProduto = new double [10];
 		int [] estoqueTotal = new int [10];
 		
-		//public static void mostraProdutos(int posicaoProduto[], String codProduto[], String descricaoProduto[], int estoqueTotal[], double valorProduto[]) {
+		
 
 	        System.out.println("# \t CODIGO \t PRODUTO \t PREÇO \t\t QUANTIDADE");
 	        for(int i=0; i<10; i++) {
 	            System.out.printf("\n %d \t %s \t\t %s \t R$ %.2f \t Qtd:  %d",posicaoProduto[i], codProduto[i], valorProduto[i], estoqueTotal[i]);
-	       // }
+	      
 		System.out.println("Informe Primeiro Nome: ");
 		nome = leia.next();
 		
@@ -83,7 +83,7 @@ public class Emenu {
 			System.out.printf("Olá SrE %s: ", nome);
 			
 		}
-	}
+	        }
 	
 	/*public static void adicionarCarrinho()
 	{
@@ -99,7 +99,6 @@ public class Emenu {
 	public static void carrinho() {
 		int produto = 10;
 	}*/
- }
 
-
-
+	}
+	}
