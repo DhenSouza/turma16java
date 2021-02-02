@@ -1,5 +1,8 @@
 package eCommerce;
 
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
 public class partRapha {
 
 	public static void main(String[] args)
@@ -16,8 +19,7 @@ public class partRapha {
 		System.out.println("\t\t\t BOOKPLUS Ltda.");
 		pulaLinha();
 		
-		
-				
+	
 				// POSICAO
 				int posicaoProduto[] = new int[10];
 						
@@ -82,22 +84,20 @@ public class partRapha {
 						// mostrar carrinho
 						break;
 				}
-						
-				
-				
+		
 				System.out.println("\n\nSelecione o produto que deseja adicionar ao carrinho: ");
-		
-		
 		
 	}
 	
 	// --------------------------------------------------------------------------
 	
-	public static void mostraProdutos(int posicaoProduto[], String codProduto[], String descricaoProduto[], int estoqueTotal[], double valorProduto[]) {
+	public static void mostraProdutos(int posicaoProduto[], String codProduto[], String descricaoProduto[], 
+			int estoqueTotal[], double valorProduto[]) {
 		
 		System.out.println("# \t CODIGO \t PRODUTO \t PREÇO \t\t QUANTIDADE");
 		for(int i=0; i<10; i++) {
-			System.out.printf("\n %d \t %s \t\t %s \t R$ %.2f \t Qtd:  %d",posicaoProduto[i], codProduto[i], descricaoProduto[i], valorProduto[i], estoqueTotal[i]);
+			System.out.printf("\n %d \t %s \t\t %s \t R$ %.2f \t Qtd:  %d",posicaoProduto[i], codProduto[i],
+					descricaoProduto[i], valorProduto[i], estoqueTotal[i]);
 		}
 		
 	}
