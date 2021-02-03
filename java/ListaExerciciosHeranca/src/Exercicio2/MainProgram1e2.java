@@ -31,7 +31,7 @@ public class MainProgram1e2 {
 		System.out.println("\tSalario: " + judas.getSalarioBase());
 		judas.vencimentoSalario();
 		
-		System.out.println("\tSalario calculado: " + judas.getSalarioBase());
+		System.out.println("\tSalario calculado:"+ judas.vencimentoSalario());
 		linha(80);
 		
 		Operario lucas = new Operario("Lucas", "Av . São Joao", "11 98563641");
