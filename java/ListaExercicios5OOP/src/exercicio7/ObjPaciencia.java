@@ -6,7 +6,7 @@ public class ObjPaciencia {
 		Paciente paciente = new Paciente("joão ", 4569, "Gases");
 		
 		System.out.println("Nome: \t Registro:  Descrição: ");
-		System.out.println(paciente.nome + " \t\t" + paciente.Registro+ "\t" + paciente.descricao);
+		System.out.println(paciente.nome + " \t\t" + paciente.registro+ "\t" + paciente.descricao);
 	}
 
 }
