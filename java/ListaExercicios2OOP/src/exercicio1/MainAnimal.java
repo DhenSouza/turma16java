@@ -21,28 +21,35 @@ public class MainAnimal {
 		char pergunta = leia.next().toUpperCase().charAt(0);
 		
 		if(pergunta == 'S') {
-			System.out.println("Informe a Raça do animal se ele obtiver tal classificatoria: ");
+			System.out.println("Informe a RaÃ§a do animal se ele obtiver tal classificatoria: ");
 			 racas[i] = leia.next();
 			 
 			 Cachorro cachorro = new Cachorro (animal[i], contador[i], racas[i]);
 			 System.out.println("Nome:" + cachorro.getNome() + " Idade: " + cachorro.getIdade()+ " Raca: " + racas[i]);
+			 linha(1);
+				System.out.println("Nome:" + cachorro.getNome());
+				System.out.println(cachorro.emitirSom());
+				System.out.println(cachorro.movimentar());
 			 Cavalo cavalo = new Cavalo (animal[i], contador[i], racas[i]);
 			 System.out.println("Nome:" + cavalo.getNome() + " Idade: " + cavalo.getIdade() + " Raca: " + racas[i]);
+			 System.out.println(cavalo.emitirSom());
+				System.out.println(cavalo.movimentar());
 			
 		}
 		else if (pergunta == 'N')
 		{
 			 Preguica preguica = new Preguica (animal[i], contador[i]);
 			 System.out.println("Nome:" + preguica.getNome() + " Idade: " + preguica.getIdade());
+			 System.out.println(preguica.emitirSom());
+			System.out.println(preguica.movimentar());
 		}
 		}
-	
 		
 	/*Cachorro cachorro = new Cachorro ("cachorro", 5, "Bulldog");
 	
 	Cavalo cavalo = new Cavalo ("Cavalo", 10, "Mustang");
 	
-	Preguica preguica = new Preguica ("Preguiça", 3, "Abtrata");
+	Preguica preguica = new Preguica ("PreguiÃ§a", 3, "Abtrata");
 	
 	
 	System.out.println("Nome:" + cachorro.getNome() + " Idade: " + cachorro.getIdade() + " Raca: " + cachorro.getRaca());
@@ -66,6 +73,12 @@ public class MainAnimal {
 	System.out.println(preguica.movimentar());
 	
 	*/
+	}
+	
+	public static void linha(int linha) {
+		for(int i=0; i<10;i++) {
+			System.out.println("â•");
+		}
 	}
 
 }
