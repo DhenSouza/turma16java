@@ -4,7 +4,7 @@ public class MainProgram {
 
 	public static void main(String[] args) {
 		
-		Cachorro dog = new Cachorro("cachorro", "Bulldog", 54);
+		Cachorro teste = new Cachorro("cachorro", "Bulldog", 54);
 		
 		
 }
