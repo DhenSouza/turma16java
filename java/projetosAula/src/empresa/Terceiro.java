@@ -1,6 +1,6 @@
 package empresa;
 
-public class Terceiro extends Empregado{
+public final class Terceiro extends Empregado{
 
 	private double acrescimo;
 	

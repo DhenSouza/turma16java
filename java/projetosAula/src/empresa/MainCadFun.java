@@ -1,46 +1,59 @@
 package empresa;
 
+import java.util.ArrayList;
 import java.util.Locale;
 import java.util.Scanner;
+import java.util.List;
 
 public class MainCadFun {
 
 	public static void main(String[] args) {
 		Locale.setDefault(Locale.US);
 		Scanner leia = new Scanner(System.in);
+	
+		List <Empregado> lista = new ArrayList<>();
 		
-		System.out.println("Digite a matricula: ");
-		int matricula = leia.nextInt();
-		leia.nextLine();
-		System.out.println("Digite o nome: ");
-		String nome = leia.nextLine();
-		
-		System.out.println("Digite o valor das horas trabalhadas: ");
-		double horas = leia.nextDouble();
-		System.out.println("Digite as Horas trabalhadas: ");
-		double valorHora = leia.nextDouble();
-		System.out.println("terceiro S/N:");
-		char op = leia.next().toUpperCase().charAt(0);
-		
-		if (op == 'S')
-		{
-			System.out.println("Digite o valor do acrescimo: ");
-			double acrescimo = leia.nextDouble();
-			Empregado func1 = new Terceiro(nome, matricula, horas, valorHora, acrescimo);
-			System.out.println("matricula: "+ func1.getMatricula());
-			System.out.println("nome: "+ func1.getNome());
-			System.out.println("salario: "+ func1.salario());
+		System.out.println("Digite o numero de empregados:");
+		int numero = leia.nextInt();
+		for(int i=1; i<=numero;i++) {
 			
+			System.out.println("Funcionario: "+ i);
+			System.out.println("terceiro S/N:");
+			char op = leia.next().toUpperCase().charAt(0);
+			
+			System.out.println("Informe o nome: ");
+			String nome = leia.next();
+			System.out.println("Informe a Matricula:");
+			int matricula = leia.nextInt();
+			
+			System.out.println("Informe as horas trabalhadas: ");
+			int horas = leia.nextInt();
+			System.out.println("Informe o valor das Horas trabalhadas: ");
+			int valorHora = leia.nextInt();
+			if (op == 'S')
+			{
+				
+				System.out.println("Digite o valor do acrescimo: ");
+				double acrescimo = leia.nextDouble();
+				lista.add(new Terceiro(nome, matricula, horas, valorHora, acrescimo));
+				
+			}
+			else if(op == 'N')
+			{
+				
+				lista.add(new Empregado(nome, matricula, horas, valorHora));
+			}
 		}
-		else if(op == 'N')
-		{
-			Empregado func1 = new Empregado(nome, matricula, horas, valorHora);
-			System.out.println("matricula: "+ func1.getMatricula());
-			System.out.println("nome: "+ func1.getNome());
-			System.out.println("salario: "+ func1.salario());
-		}
-
 		
+		System.out.println();
+		System.out.println("PAGAMENTOS: ");
+		for(Empregado emp : lista) {
+			System.out.println(emp.getNome() + " - $ " + String.format("%.2f", emp.salario()));
+		}
+		
+		
+		
+		leia.close();
 	}
 
 }
