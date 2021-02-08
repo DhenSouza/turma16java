@@ -1,5 +1,6 @@
 package estoque;
 
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -12,7 +13,7 @@ public class MainProgramEstoque {
 		List <String> produtos = new ArrayList<>();
 		
 		// Adicionar na Lista
-		produtos.add("Trono de Vidro");
+		
 		produtos.add("Corte de Espinhos e Rosas");
 		produtos.add("Corte de Nevoa e Furia");
 		produtos.add("Corte de Asas e Ruinas");
@@ -23,6 +24,7 @@ public class MainProgramEstoque {
 		}
 		linha(80);
 		System.out.println("\n");
+		
 		// Remover um item da lista
 		System.out.println("Livro Removido: Corte de Nevoa e Furia ");
 		produtos.remove("Corte de Nevoa e Furia");
@@ -33,13 +35,15 @@ public class MainProgramEstoque {
 		
 		linha(80);
 		System.out.println("\n");
+		
 		//atualizar a lista;
+		
 		System.out.println("Livro atualizado de Corte de Asas e Ruinas para A Rainha Vermelha ");
-		produtos.set(2, "A Rainha Vermelha");
+		produtos.set(1, "A rainha Vermelha");
 		for(String checar : produtos) {
 			System.out.println(checar);
+
 		}
-		
 	}
 	
 	public static void linha(int linha) {

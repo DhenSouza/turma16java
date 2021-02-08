@@ -50,9 +50,7 @@ public class MainCadFun {
 		for(Empregado emp : lista) {
 			System.out.println(emp.getNome() + " - $ " + String.format("%.2f", emp.salario()));
 		}
-		
-		
-		
+
 		leia.close();
 	}
 
