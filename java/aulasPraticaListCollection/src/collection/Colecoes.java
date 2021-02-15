@@ -18,28 +18,28 @@ public class Colecoes {
 			System.out.println("Lista de nomes: " + name);
 		}
 		
-		/*Collection<String> nomes2 = Arrays.asList("Lucas", "Joana");
+		Collection<String> nomes2 = Arrays.asList("Lucas", "Joana");
 		nomes.addAll(nomes2);
-		System.out.println("Lista de nomes: " + nomes);*/
+		System.out.println("Lista de nomes: " + nomes);
 		
-		/*System.out.println("Contém o nome Maria? " + nomes.contains("Maria"));
-		System.out.println("Lista: " + nomes);*/
-		/*System.out.println("Lista de nomes: " + nomes);
+		System.out.println("Contém o nome Maria? " + nomes.contains("Maria"));
+		System.out.println("Lista: " + nomes);
+		System.out.println("Lista de nomes: " + nomes);
 		nomes.clear();
 		
-		System.out.println("Lista de nomes: " + nomes);*/
-		/*System.out.println("Lista de nomes: " + nomes);
+		System.out.println("Lista de nomes: " + nomes);
+		System.out.println("Lista de nomes: " + nomes);
 		nomes.remove("Mario"); // Remove uma posição
-		System.out.println("Lista de nomes: " + nomes);*/
+		System.out.println("Lista de nomes: " + nomes);
 		
 		
-		/*if(nomes.isEmpty()) {
+		if(nomes.isEmpty()) {
 			System.out.println("Lista vazia...");
 		}
 		else
 		{
 			System.out.println("Lista de nomes: " + nomes);
-		}*/
+		}
 		
 	}
 }
